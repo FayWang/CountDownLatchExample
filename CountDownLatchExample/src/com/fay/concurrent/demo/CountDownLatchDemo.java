@@ -24,7 +24,6 @@ public class CountDownLatchDemo {
 		Worker w1 = new Worker(latch, "张三");
 		Worker w2 = new Worker(latch, "李四");
 		Worker w3 = new Worker(latch, "王二");
-		System.out.println(latch.getCount());
 		Boss boss = new Boss(latch);
 
 		executor.execute(w3);
